@@ -15,5 +15,5 @@ function space_generator_2d(length = 1, base=[0,1]) {
       new_space = []
     }
   }
-  return new_space
+  return length > 1 ? new_space : space;
 }
