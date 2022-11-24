@@ -5,11 +5,11 @@ def space_generator_2d(length = 1, base=[0,1]):
   for i in base:
     space.append([i])
   new_space = []
-  for i in range(length) :
+  for i in range(length-1) :
     for j in space:
       for k in base:
         new_space.append(j+[k])
-    if i!= length-1:
+    if i!= length-2:
       space = new_space[:]
       new_space = []
-  return space
+  return new_space
