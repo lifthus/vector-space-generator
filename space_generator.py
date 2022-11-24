@@ -12,4 +12,4 @@ def space_generator_2d(length = 1, base=[0,1]):
     if i!= length-1:
       space = new_space[:]
       new_space = []
-  return space
+  return new_space
